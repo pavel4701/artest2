@@ -1,33 +1,15 @@
-
- 
-
-<!DOCTYPE html>
+    
+<!doctype HTML>
 <html>
- <head>
+    <head>
         <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    </head>
     <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
     <script src="https://rawgit.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
         <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
-  <meta charset="utf-8">
-  <title>border</title>
-  <style>
-   .brd {
-    border: 4px double black; /* Параметры границы */
-    background: #fc3; /* Цвет фона */
-    padding: 10px; /* Поля вокруг текста */
-    align-items:flex-end
-   }
-	body{
-  border: solid black 2px;
-}
-  </style>
- </head> 
- <body>
-  <div class="brd">
- 	CMIT
-   </div>
- </body>
-<body>
+    <style>
+    </style>
+    <body>
         <!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
         <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
 
@@ -43,5 +25,8 @@
         <!-- use this <a-entity camera> to support multiple-markers, otherwise use <a-marker-camera> instead of </a-marker> -->
         <a-entity camera></a-entity>
         </a-scene>
-</body>
-</html>
+        <div>
+            ЦМИТ
+        </div>
+    </body>
+</html> 
